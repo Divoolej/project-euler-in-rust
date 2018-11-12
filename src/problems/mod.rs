@@ -4,8 +4,9 @@ use std::fs;
 
 mod problem_1;
 mod problem_2;
+mod problem_3;
 
-const PROBLEMS: u32 = 2;
+const PROBLEMS: u32 = 3;
 
 const OUTPUT_PATH: &'static str = "data/output.txt";
 const SOLUTIONS_PATH: &'static str = "data/solutions.txt";
@@ -14,6 +15,7 @@ fn solve(problem_number: u32) -> Result<String, String> {
   match problem_number {
     1 => Ok(problem_1::solve()),
     2 => Ok(problem_2::solve()),
+    3 => Ok(problem_3::solve()),
     _ => Err(format!("No implementation for Problem {}", problem_number))
   }
 }

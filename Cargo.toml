@@ -4,4 +4,11 @@ version = "0.1.0"
 authors = ["Wojciech Olejnik <divoolej@gmail.com>"]
 edition = "2018"
 
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
 [dependencies]
